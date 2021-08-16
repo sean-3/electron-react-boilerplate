@@ -22,7 +22,7 @@
     "*.json,.{babelrc,eslintrc,prettierrc}": [
       "prettier --ignore-path .eslintignore --parser json --write"
     ],
-    "*.{css,scss}": [
+    "*.{css,scss,less}": [
       "prettier --ignore-path .eslintignore --single-quote --write"
     ],
     "*.{html,md,yml}": [
@@ -198,7 +198,7 @@
     "concurrently": "^6.0.2",
     "core-js": "^3.11.3",
     "cross-env": "^7.0.3",
-    "css-loader": "^5.2.4",
+    "css-loader": "^6.2.0",
     "css-minimizer-webpack-plugin": "^2.0.0",
     "detect-port": "^1.3.0",
     "electron": "^13.1.8",
@@ -237,7 +237,7 @@
     "rimraf": "^3.0.0",
     "sass": "^1.32.12",
     "sass-loader": "^11.0.1",
-    "style-loader": "^2.0.0",
+    "style-loader": "^3.2.1",
     "terser-webpack-plugin": "^5.1.1",
     "typescript": "^4.2.4",
     "url-loader": "^4.1.0",
@@ -249,10 +249,13 @@
     "yarn-deduplicate": "^3.1.0"
   },
   "dependencies": {
+    "antd": "^4.16.11",
     "electron-debug": "^3.2.0",
     "electron-log": "^4.3.5",
     "electron-updater": "^4.3.8",
     "history": "4.x.x",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
